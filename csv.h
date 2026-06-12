@@ -817,7 +817,7 @@ void parse_line(char *line, char **sorted_col,
       sorted_col[i] = col_begin;
     }
   }
-  if (line != nullptr)
+  if (line != nullptr && *line != '\0')
     throw ::io::error::too_many_columns();
 }
 
